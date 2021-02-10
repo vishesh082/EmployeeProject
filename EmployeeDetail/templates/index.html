@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Details</title>
+</head>
+<body>
+<h2>Enter the details</h2>
+<form action="" method="POST">
+    {% csrf_token %}
+    code <input name="code" type="number"/><br/>
+    person Type <input name="person_type" type="text"/><br/>
+    First Name<input name="fname" type="text"/><br/>
+    Father Name<input name="father" type="text"/><br/>
+    Last Name<input name="lname" type="text"/><br/>
+    Religion<input name="religion" type="text"/><br/>
+    Sex<input name="sex" type="text"/><br/>
+    Nationality<input name="nation" type="text"/><br/>
+    Age<input name="age" type="number"/><br/>
+    <input type="submit" value="submit"/>
+</form>
+<a href="/views">View</a>
+<a href="/admin">Admin</a>
+</body>
+</html>
